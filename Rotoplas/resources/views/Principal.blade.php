@@ -114,6 +114,34 @@
                 </div>
             </div>
         </div>
+
+        <div class="productos">
+            <span class="imagen-producto">
+                <img src="/Rotoplas/bomba_periférica.png" alt="">
+            </span>
+            <div class="especificaciones">
+                <span class="nombre_producto">
+                    <h2>Bomba periférica</h2>
+                </span>
+                <div id="informacion_producto">
+                    <span class="precio">
+                        <p>$10,000.00</p>
+                    </span>
+                    <span class="especificaciones">
+                        <a href="#">
+                            <img src="/Rotoplas/especificaciones_producto.png" alt="">
+                        </a>
+                        <p>Especificaciones</p>
+                    </span>
+                    <span class="carrito">
+                        <a href="#">
+                            <img src="/Rotoplas/carrito.png" alt="">
+                        </a>
+                        <p>Agregar al carrito</p>
+                    </span>
+                </div>
+            </div>
+        </div>
     </div>
     </div>
     <aside class="aside">

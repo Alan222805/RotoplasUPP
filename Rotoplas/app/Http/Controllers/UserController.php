@@ -27,10 +27,10 @@ class UserController extends Controller
         return view('carrito');
     }
     public function login(){
-        return view('Login');
+        return view('Log_in');
     }
     public function signin(){
-        return view('Signin');
+        return view('Sign_in');
     }
     public function conocenos(){
         return view('Conocenos');

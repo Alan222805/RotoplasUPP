@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">
 
     <meta name="description" content="">
 
@@ -35,19 +35,22 @@
                     </a>
                     <ul class="navbar-nav d-flex justify-content-center align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Capacitate</a>
+                            <a class="nav-link" href="Principal">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Productos</a>
+                            <a class="nav-link" href="capacitate">Capacitate</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Conocenos</a>
+                            <a class="nav-link" href="productos">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Log In</a>
+                            <a class="nav-link" href="Conocenos">Conocenos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Sign Up</a>
+                            <a class="nav-link" href="Log_in">Log_in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Sign_in">Sign_up</a>
                         </li>
                     </ul>
                 </div>
