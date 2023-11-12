@@ -1,5 +1,10 @@
 
 @extends('Comun')
+
+@section('links_diseño')
+    <link rel="stylesheet" href="/css/Estilos_Principal.css">
+@endsection
+
 @section('ContenidoPrincipal')
     <div class="container">
         <span class="titulo_pagina">
@@ -145,6 +150,6 @@
     </div>
     </div>
     <aside class="aside">
-
+        <img src="/Rotoplas/tinaco.png" alt="">
     </aside>
 @endsection

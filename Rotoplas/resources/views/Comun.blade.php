@@ -6,14 +6,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 
     <meta name="description" content="">
 
     <title>Home</title>
-    <link rel="stylesheet" href="css/Estilos_Conocenos.css">
-
     <link rel="stylesheet" href="/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    @yield('links_diseño')
 
 
 
@@ -26,7 +25,7 @@
             <div class="container-fluid">
 
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mi-menu"
-                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon "></span>
                 </button>
                 <div class="collapse navbar-collapse" id="mi-menu">

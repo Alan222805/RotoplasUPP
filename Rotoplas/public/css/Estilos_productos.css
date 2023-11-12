@@ -11,25 +11,6 @@ html, body{
     overflow-x: hidden;
 }
 
-/*html {
-    min-width: 100vh;
-    max-width: 100vw;
-}
-
-body {
-    position: relative;
-    padding-bottom: 0px;
-    min-height: 100vh;
-    max-width: 100vw;
-}*/
-
-.navbar li a {
-    background-color: #F27329;
-    border-radius: 32px;
-    margin-right: 6px;
-    width: 110px;
-}
-
 header {
     min-height: 15vh;
 }
@@ -41,6 +22,12 @@ header {
 }
 
 /*Agregandoles estilo al navbar*/
+.navbar li a {
+    background-color: #F27329;
+    border-radius: 32px;
+    margin-right: 6px;
+    width: 110px;
+}
 nav {
     background: linear-gradient(180deg, rgba(89.48, 158.12, 173.19, 0.60) 0%, rgba(250.75, 221.08, 176.57, 0) 100%);
 }
@@ -60,31 +47,49 @@ nav ul {
 
 /*Estilos container*/
     .container{
-        display: flex;
-        flex-direction: row;
-        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .container .imagen_empresa img{
-        width: 400px;
-        padding: 5px;
-        border-radius: 8%;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1)
+    .container .producto{
+        padding-top: 30px;
+        text-align: center;
+        border-bottom: solid 1px #0c0c0c;
+        padding-bottom: 10px;
     }
-
-    .container .imagen_empresa img:hover{
-        transform: scale(1.1);
-        transition: transform 1s;
-    }
-
-    .container .informacion{
-        padding: 15px;
+    .container .producto .informacion_producto{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .container .producto .link_producto img{
+        border-radius: 8%;
+        width: 300px;
+    }
+    .container .producto .link_producto img:hover{
+        transform: scale(1.1);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .container .producto .informacion_producto .nombre_producto{
+        font-size: 30px;
+    }
+
+    .container .producto .informacion_producto .especs_carrito{
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .container .producto{
+        position: relative;
+        height: 600px;
     }
 /*Fin estilos container*/
 
@@ -164,7 +169,7 @@ nav ul {
     .main .container{
         width: 100%;
     }
-    /*fin productos*/
+    
 
     /*diseño responsive para .container*/
 

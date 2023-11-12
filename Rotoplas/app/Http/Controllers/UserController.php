@@ -36,4 +36,7 @@ class UserController extends Controller
         return view('Conocenos');
     }
 
+    public function carritoAdmin(){
+        return view('carrito_admin');
+    }
 }
