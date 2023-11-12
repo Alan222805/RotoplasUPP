@@ -89,7 +89,7 @@
 
         <div class="productos">
             <span class="imagen-producto">
-                <img src="/Rotoplas/tuboplus.png" alt="">
+                <img src="/Rotoplas/tinaco.png" alt="">
             </span>
             <div class="especificaciones">
                 <span class="nombre_producto">
@@ -97,7 +97,7 @@
                 </span>
                 <div id="informacion_producto">
                     <span class="precio">
-                        <p>$2,500.00</p>
+                        <p>$7,500.00</p>
                     </span>
                     <span class="especificaciones">
                         <a href="#">

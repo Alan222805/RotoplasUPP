@@ -56,23 +56,25 @@
 
     </header>
 
-    <section class="main">
+    <main class="main">
         @yield('ContenidoPrincipal')
-    </section>
+    </main>
 
     <footer class="footer">
-        <div class="contactanos">
-            <h1 id="contactanos">CONTACTANOS</h1>
-            <p class="p_contactanos"><strong>Correo: </strong> <a href="#">rotoplas@gmail.com</a></p>
-            <p class="p_contactanos"><strong>Teléfono: </strong>7157948</p>
-        </div>
-        <div class="redes">
-            <a href="#"><img src="Rotoplas/facebook.png" alt=""></a>
-            <a href="#"><img src="Rotoplas/instagram.png" alt=""></a>
-            <a href="#"><img src="Rotoplas/twitter.png" "></a>
-        </div>
-        <div class="footer-logo">
-            <img src="Rotoplas/Logo_de_Rotoplas.svg.png" >
+        <div class="container-footer">
+            <div class="contactanos">
+                <h1 id="contactanos">CONTACTANOS</h1>
+                <p class="p_contactanos"><strong>Correo: </strong> <a href="#">rotoplas@gmail.com</a></p>
+                <p class="p_contactanos"><strong>Teléfono: </strong>7157948</p>
+            </div>
+            <div class="redes">
+                <a href="#"><img src="Rotoplas/facebook.png" alt=""></a>
+                <a href="#"><img src="Rotoplas/instagram.png" alt=""></a>
+                <a href="#"><img src="Rotoplas/twitter.png" "></a>
+            </div>
+            <div class="footer-logo">
+                <img src="Rotoplas/Logo_de_Rotoplas.svg.png" >
+            </div>
         </div>
     </footer>
 

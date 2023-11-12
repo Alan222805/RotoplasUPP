@@ -6,9 +6,16 @@
     list-style: none;
 }
 
-body{
-    display: grid;
+html {
+    min-width: 100vh;
+    max-width: 100vw;
+}
+
+body {
+    position: relative;
+    padding-bottom: 0px;
     min-height: 100vh;
+    max-width: 100vw;
 }
 
 .navbar li a {
@@ -18,9 +25,10 @@ body{
     width: 110px;
 }
 
-header{
+header {
     min-height: 15vh;
 }
+
 .menu,
 .navbar,
 .footer {
@@ -34,29 +42,120 @@ nav {
 nav ul {
     text-align: center;
 }
-.navbar-collapse{
+
+.navbar-collapse {
     justify-content: space-between;
 }
 
 @media screen and (max-width: 768px) {
-    .navbar-brand{
+    .navbar-brand {
         display: none;
     }
 }
 
+
+/*Estilos aside*/
+.aside {
+    background-color: #F27329;
+    width: 100%;
+    height: 100%;
+}
+
+/*fin estilos aside*/
+
+/*Estilos container*/
+.container .productos {
+    height: auto;
+    width: 98.5%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 18.5% 78%;
+    padding: 0;
+    border-top: solid 0.5px black;
+}
+
+.container .titulo_pagina h1 {
+    font-weight: bolder;
+}
+
+.imagen-producto img {
+    width: 90%;
+    height: auto;
+}
+
+body .container {
+    width: 75vw;
+    height: auto;
+    position: relative;
+    padding: 0;
+}
+
+.especificaciones .nombre_producto {
+    text-align: center;
+}
+
+.especificaciones .nombre_producto h2 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.especificaciones {
+    position: relative;
+    padding-right: 10px;
+}
+
+#informacion_producto .precio p {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#informacion_producto .carrito,
+.especificaciones {
+    text-align: center;
+}
+
+#informacion_producto {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 50px;
+}
+/*Fin estilos container*/
+
+/*ESTILOS PARA EL MAIN*/
+.main {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    max-width: 100%;
+    min-height: 70vh;
+}
+/*Fin estilos main*/
+
 /*Estilos para el footer*/
+.container-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
 .footer {
     display: flex;
     flex-direction: row;
     margin: 0;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    max-width: 100%;
     background: linear-gradient(180deg, rgba(37.52, 120.06, 120.06, 0) 0%, rgba(89, 158, 173, 0.85) 100%);
     padding-left: 20px;
     padding-right: 20px;
-    min-height: 15vh;
-    margin-top: auto;
+    height: auto;
+    padding-top: 1em;
 }
 
 .footer .contactanos {
@@ -72,101 +171,32 @@ nav ul {
     color: blue;
 }
 
-.footer .redes img{
+.footer .redes img {
     width: 64px;
-    height: auto;
     margin-right: 20px;
 }
 
-.footer .footer-logo img{
+.footer .footer-logo img {
     width: 200px;
-    height: auto;
 }
 
-/*Estilos aside*/
-.aside{
-    background-color: #F27329;
-    width: 25vw;
-    height: 100%;
-}
-/*fin estilos aside*/
-
-/*Estilos container*/
-
-.container .productos{
-    height: auto;
-    width: 75vw;
-    position: relative;
-    padding-right: 10px;
-    padding-left: 10px;
-    display: grid;
-    grid-template-columns: 18.5% 80%;
-}
-.container .titulo_pagina h1{
-    font-weight: bolder;
-}
-.imagen-producto img{
-    width: 90%;
-    height: auto;
-}
-
-body .container{
-    width: 75vw;
-    height: 70vh;
-    position: relative;
-    padding: 0;
-}
-
-.especificaciones .nombre_producto{
-    text-align: center;
-}
-.especificaciones .nombre_producto h2{
-    font-weight: bold;
-    font-size: 30px;
-}
-
-.especificaciones{
-    position: relative;
-}
-
-#informacion_producto .precio p{
-    font-size: 40px;
-    font-weight: bold;
-}
-
-#informacion_producto .carrito, .especificaciones{
-    text-align: center;
-}
-#informacion_producto{
-    display: flex;
-    height: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding-bottom: 50px;
-}
-
-/*Fin estilos container*/
-
-/*ESTILOS PARA EL MAIN*/
-.main {
-    display: grid;
-    grid-template-columns: 75vw 25vw;
-    width: 100vw;
-    min-height: 70vh;
-}
+/*fin de estilos del footer*/
 
 
 /*Responsive movil*/
 @media (max-width: 768px) {
-    header, .navbar{
+
+    header,
+    .navbar {
         height: 10vh;
     }
+
     .footer {
         height: 30vh;
         flex-direction: column;
         padding-bottom: 15px;
         justify-content: center;
+        margin-top: auto;
     }
 
     .footer .contactanos {
@@ -182,12 +212,13 @@ body .container{
         color: blue;
     }
 
-    .footer .redes img{
+    .footer .redes img {
         margin-right: 20px;
         width: 45px;
         height: auto;
     }
-    .footer .footer-logo img{
+
+    .footer .footer-logo img {
         margin-top: 20px;
         width: 150px;
     }
