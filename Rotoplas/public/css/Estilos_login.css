@@ -1,0 +1,165 @@
+html{
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-family: 'Courier New', Courier, monospace;
+}
+.container img{
+    width: 800px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container form{
+    font-weight: bold;
+}
+
+.parent {
+    width: 800px;
+    height: 550px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.datos{
+    border-style: dotted;
+    font-family: 'Losa de Roboto', 'Luz 300';
+    background-color: #97ebf0;
+    border-radius: 8px;
+    height: 30px;
+    width: 400px;
+}
+
+.buttons{
+    background-image: linear-gradient(144deg,#ADD8E6, #00008B 50%,#00FFEF);
+    font-family: 'Losa de Roboto', 'Luz 300';
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 5px;
+    border-radius: 5rem;
+    width: 200px;
+    height: 50px;
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+    border: 0;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    line-height: 1em;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.buttons:hover{
+    box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.3);
+    background-color: rgb(181, 221, 207);
+}
+
+.buttons:active{
+    background-color: rgb(146, 197, 180);
+}
+
+.buttons:active,
+.buttons:hover{
+    outline: 0;
+}
+
+.buttons span{
+    background-color: rgb(5, 6, 45);
+    transition: 300ms;
+}
+
+.buttons:hover span{
+    background: none;
+}
+
+.buttons:active{
+    transform: scale(0.9);
+}
+
+.datos {
+    width: 100%;
+}
+
+.buttons {
+    width: 100%;
+    background-color: #0367A6;
+}
+
+/* Estilos para pantallas menores a 768px */
+@media (max-width: 390px) {
+    .container img{
+        width: 380px;
+    }
+
+    .labcontraseña {
+        text-align: left;
+    }
+
+    .datos{
+        background-color: #97ebf0;
+        border-radius: 8px;
+        height: 30px;
+        width: 250px;
+    }
+
+    .buttons{
+        font-family: 'Losa de Roboto', 'Luz 300';
+        margin-bottom: 5px;
+        border-radius: 5rem;
+        width: 200px;
+        height: 50px;
+        transition: box-shadow 0.3s ease;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+/* Estilos para pantallas menores a 768px */
+
+@media (min-width: 768px) {
+    .parent{
+        width: 740px;
+    }
+    .container img{
+        width: 730px;
+    }
+
+    .labcontraseña {
+        text-align: left;
+    }
+
+    .datos{
+        background-color: #97ebf0;
+        border-radius: 8px;
+        height: 30px;
+        width: 622.39px;
+        border: 1px solid #ccc;;
+    }
+
+    .datos:focus{
+        background-color: #e8f0fe;
+        border-color: #8ab4f8;
+    }
+
+    .buttons{
+        font-family: 'Losa de Roboto', 'Luz 300';
+        margin-bottom: 5px;
+        border-radius: 5rem;
+        width: 200px;
+        height: 50px;
+        transition: box-shadow 0.3s ease;
+        cursor: pointer;
+    }
+
+}

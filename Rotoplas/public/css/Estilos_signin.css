@@ -1,0 +1,205 @@
+/*Responsive image 1024px*/
+.container_image img{
+    height: 25vh;
+}
+
+.container_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6vh;
+    margin-bottom: 4vh;
+}
+
+/*Estilos responsivos de los inputs --> 390px*/
+.container{
+    width: 380px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.inputs{
+    width: 300px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    border-radius: 8px;
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.inputs::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: blur(25px);
+    border-radius: 20px;
+    background-color: #f2f2f2;
+  }
+
+  .input__label {
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    margin-left: 0.4em;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .input__description {
+    font-size: 0.6em;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .input {
+    border: #000;
+    border-style: solid;
+    border-width: 1px;
+    max-width: 300px;
+    max-height: 0;
+    height: 35px;
+    padding: 0.6em;
+    padding-left: 0.9em;
+    border-radius: 20px;
+    background: #fff;
+    transition: background 300ms, color 300ms;
+
+    /*box-shadow: inset 0 0 10px rgba(155, 126, 218, 0.4), 0 0 9px 3px rgba(155, 126, 218, 0.1);*/
+
+  }
+
+  .input:hover,.input:focus {
+    background: rgb(72, 66, 66);
+    color: #fff;
+    font-weight: bold;
+  }
+
+/*Estilos de los botones*/
+
+/*Boton para móvil*/
+
+.button_MT {
+    --purple: rgb(242.24, 242.24, 242.24, 0.70);
+    font-size: 18px;
+    padding: 0.8em 3em;
+    letter-spacing: 0.08em;
+    position: relative;
+    font-family: inherit;
+    border-radius: 0.6em;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid var(--purple);
+    background: linear-gradient(to right, rgba(155, 126, 218, 0.1) 1%, transparent 40%, transparent 60%, rgba(155, 126, 218, 0.1) 100%);
+    color: black;
+    box-shadow: inset 0 0 10px rgba(155, 126, 218, 0.4), 0 0 9px 3px rgba(155, 126, 218, 0.1);
+  }
+
+  .button_MT:hover {
+    color: #BFA3F3;
+    box-shadow: inset 0 0 10px rgba(155, 126, 218, 0.6), 0 0 9px 3px rgba(155, 126, 218, 0.2);
+  }
+
+  .button_MT:before {
+    content: "";
+    position: absolute;
+    left: -4em;
+    width: 4em;
+    height: 100%;
+    top: 0;
+    transition: transform .4s ease-in-out;
+    background: linear-gradient(to right, transparent 1%, rgba(155, 126, 218, 0.1) 40%, rgba(155, 126, 218, 0.1) 60%, transparent 100%);
+  }
+
+  .button_MT:hover:before {
+    transform: translateX(15em);
+  }
+
+.container_buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+legend{
+    text-align: center;
+}
+
+.container_button_MT{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+@media  (max-width: 768px){
+    /*Responsive*/
+    .container_image img{
+        width: 350px;
+        height: 120px;
+        margin-top: 5vh;
+        box-sizing: border-box;
+    }
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .inputs {
+        min-width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .input {
+        width: 410px;
+        max-width: none;
+        height:50px ;
+        max-height: none;
+        font-size: 15px;
+        box-sizing: border-box;
+        padding-right: 0px;
+    }
+    .container {
+        display: flex;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .inputs {
+        width: 430px;
+        height: 100px;
+    }
+    .container {
+        margin: 0 auto; /* Esto centra el contenedor horizontalmente */
+    }
+    .input__label{
+        font-size: 20px;
+    }
+}
