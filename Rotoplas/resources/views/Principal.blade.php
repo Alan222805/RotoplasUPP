@@ -29,7 +29,7 @@
                         <p>Especificaciones</p>
                     </span>
                     <span class="carrito">
-                        <a href="#">
+                        <a href="carrito_usuario">
                             <img src="/Rotoplas/carrito.png" alt="">
                         </a>
                         <p>Agregar al carrito</p>
@@ -56,7 +56,7 @@
                         <p>Especificaciones</p>
                     </span>
                     <span class="carrito">
-                        <a href="#">
+                        <a href="carrito_usuario">
                             <img src="/Rotoplas/carrito.png" alt="">
                         </a>
                         <p>Agregar al carrito</p>
@@ -83,7 +83,7 @@
                         <p>Especificaciones</p>
                     </span>
                     <span class="carrito">
-                        <a href="#">
+                        <a href="carrito_usuario">
                             <img src="/Rotoplas/carrito.png" alt="">
                         </a>
                         <p>Agregar al carrito</p>
@@ -111,7 +111,7 @@
                         <p>Especificaciones</p>
                     </span>
                     <span class="carrito">
-                        <a href="#">
+                        <a href="carrito_usuario">
                             <img src="/Rotoplas/carrito.png" alt="">
                         </a>
                         <p>Agregar al carrito</p>
@@ -139,7 +139,7 @@
                         <p>Especificaciones</p>
                     </span>
                     <span class="carrito">
-                        <a href="#">
+                        <a href="carrito_usuario">
                             <img src="/Rotoplas/carrito.png" alt="">
                         </a>
                         <p>Agregar al carrito</p>

@@ -15,8 +15,6 @@
     @yield('links_diseño')
 
 
-
-
 </head>
 
 <body>
@@ -29,7 +27,7 @@
                     <span class="navbar-toggler-icon "></span>
                 </button>
                 <div class="collapse navbar-collapse" id="mi-menu">
-                    <a class="navbar-brand" href="/">
+                    <a class="navbar-brand" href="Principal">
                         <img src="/Rotoplas/Logo_de_Rotoplas.svg.png" alt="" width="250px">
                     </a>
                     <ul class="navbar-nav d-flex justify-content-center align-items-center">
@@ -50,6 +48,11 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="Sign_in">Sign_up</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-carrito" href="carrito_usuario">
+                                <img src="/Rotoplas/carrito-de-compras.png" alt="">
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -80,9 +83,22 @@
         </div>
     </footer>
 
+    <script>
+		document.addEventListener('DOMContentLoaded', function () {
+			// Obtén el botón del menú colapsado y la clase contenedor
+			var btnMenu = document.querySelector('.navbar-toggler');
+			var contenedor = document.querySelector('.main');
 
+			// Agrega un evento click al botón del menú
+			btnMenu.addEventListener('click', function () {
+				// Hacer algo con la clase contenedor cuando se hace clic en el botón del menú
+				// Por ejemplo, agregar o quitar una clase para cambiar la apariencia
+				contenedor.classList.toggle('desenfocado');
+			});
+		});
+	</script>
     <script src="/bootstrap-5.3.2-dist/js\bootstrap.bundle.min.js"></script>
-
+    @yield('archivosJS')
 </body>
 
 </html>

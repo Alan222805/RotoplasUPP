@@ -6,32 +6,32 @@
 
 @section('ContenidoPrincipal')
     <div class="container">
-        <div class="inventario">
+        <div class="herramienta">
             <a href="#">
                 <h1>Inventario</h1>
             </a>
         </div>
-        <div class="RE">
+        <div class="herramienta">
             <a href="#">
                 <h1>Reportes y Estadisticas</h1>
             </a>
         </div>
-        <div class="HP">
+        <div class="herramienta">
             <a href="#">
                 <h1>Historial de pedidos</h1>
             </a>
         </div>
-        <div class="SE">
+        <div class="herramienta">
             <a href="#">
                 <h1>Seguimiento de envios</h1>
             </a>
         </div>
-        <div class="FP">
+        <div class="herramienta">
             <a href="#">
                 <h1>Formas de pago</h1>
             </a>
         </div>
-        <div class="AO">
+        <div class="herramienta">
             <a href="#">
                 <h1>Asignar ofertas</h1>
             </a>
