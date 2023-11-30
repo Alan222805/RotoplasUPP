@@ -25,6 +25,8 @@ class UserController extends Controller
     }
     public function productos()
     {
+        //$producto = productosModel::select('descripcion')->where('id', 1)->get();
+        $producto = productosModel::select('descripcion')->where('nombre', 'Filtro de agua')->get();
         return view('productos', compact('producto'));
     }
     public function carrito()
@@ -44,13 +46,14 @@ class UserController extends Controller
         return view('Conocenos');
     }
 
-    public function datosBancarios(){
-        return view('datos_bancarios');
-    }
 
     public function carritoUser()
     {
         return view('carrito_usuario');
+    }
+
+    public function datosBancarios(){
+        return view('datos_bancarios');
     }
 
     public function carritoAdmin()

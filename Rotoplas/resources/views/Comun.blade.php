@@ -73,12 +73,12 @@
                 <p class="p_contactanos"><strong>Teléfono: </strong>7157948</p>
             </div>
             <div class="redes">
-                <a href="#"><img src="Rotoplas/facebook.png" alt=""></a>
-                <a href="#"><img src="Rotoplas/instagram.png" alt=""></a>
-                <a href="#"><img src="Rotoplas/twitter.png" "></a>
+                <a href="#"><img src="/Rotoplas/facebook.png" alt=""></a>
+                <a href="#"><img src="/Rotoplas/instagram.png" alt=""></a>
+                <a href="#"><img src="/Rotoplas/twitter.png" "></a>
             </div>
             <div class="footer-logo">
-                <img src="Rotoplas/Logo_de_Rotoplas.svg.png" >
+                <img src="/Rotoplas/Logo_de_Rotoplas.svg.png" >
             </div>
         </div>
     </footer>

@@ -21,9 +21,13 @@ Route::controller(UserController::class)->group(function () {
     Route::get('formulario', 'formulario');
     Route::post('create', 'crearCliente');
     Route::get('carrito_usuario', 'carritoUser');
+    Route::get('carrito_usuario/datos_bancarios', 'datosBancarios') ->name('carrito.datos_bancarios');
     Route::get('datos_bancarios', 'datosBancarios');
 });
 
 Route::controller(AdminController::class)->group(function () {
     Route::get('carrito_admin', 'carritoAdmin');
+    Route::get('Principal_admin', 'index');
+    Route::get('Principal_admin/agregar_producto_principal', 'formularioAgregarPrincipal') ->name('admin.formulario_producto_principal');
+    Route::post('Principal_admin', 'agregarProducto') ->name('admin.agregar_producto');
 });

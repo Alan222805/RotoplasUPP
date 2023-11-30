@@ -1,9 +1,11 @@
 @extends('Comun')
 @section('links_diseño')
     <link rel="stylesheet" href="/css/Estilos_productos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 @endsection
 
 @section('ContenidoPrincipal')
+    
     <div class="container">
         <div class="producto">
             <a class="link_producto" href="">
@@ -72,19 +74,38 @@
                     almacenamiento de agua
                 </h1>
                 <h2 class="precio_producto">$5,500.00</h2>
-                <span class="especs_carrito">
-                    <a href="#">
+                <div class="especs_carrito">
+                    <button class="btn-abrir-popup-especs" id="btn-abrir-popup-especs">
                         <img src="/Rotoplas/especificaciones_producto.png" alt="">
-                    </a>
-                    <a href="#">
+                    </button>
+                    <a href="">
                         <img src="/Rotoplas/carrito.png" alt="">
                     </a>
-                </span>
+
+                    <div class="overlay_especs" id="overlay_especs">
+                        <div class="popup_especs" id="popup_especs">
+                            <button id="btn-cerrar-popup-especs" class="btn-cerrar-popup-especs">
+                                <i class="fas fa-times"></i>
+                            </button>
+                            <h3>Especificaciones</h3>
+                            <p>
+                                @foreach ($producto as $producto)
+                                    {{ $producto->descripcion }}
+                                @endforeach
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
 
     </div>
     <aside class="aside">
 
     </aside>
+@endsection
+
+@section('archivosJS')
+    <script src="/js/popUp_Principal.js"></script>
 @endsection
