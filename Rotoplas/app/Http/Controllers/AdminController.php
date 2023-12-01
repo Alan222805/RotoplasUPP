@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\productosModel;
 use App\Models\productosNuevosModel;
 use Illuminate\Http\Request;
 
@@ -22,6 +23,11 @@ class AdminController extends Controller
         return view('administrador/agregar_producto_principal');
     }
 
+    public function inventario(){
+        $obj = productosModel::Paginate(3);
+        return view('administrador/inventario', compact('obj'));
+    }
+
     public function agregarProducto(Request $request)
     {
         $producto = new productosNuevosModel();
@@ -33,6 +39,10 @@ class AdminController extends Controller
         $producto->save();
 
         return redirect()->route('admin.agregar_producto', compact('producto'));
+    }
+
+    public function formularioModificarPrincipal(){
+        return view('administrador/modificar_producto_principal');
     }
 
 

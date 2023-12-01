@@ -21,7 +21,7 @@ class UserController extends Controller
 
     public function capacitate()
     {
-        return view('capacitate');
+        return view('/capacitate');
     }
     public function productos()
     {
@@ -43,22 +43,21 @@ class UserController extends Controller
     }
     public function conocenos()
     {
-        return view('Conocenos');
+        return view('/Conocenos');
     }
 
 
     public function carritoUser()
     {
-        return view('carrito_usuario');
+        return view('/carrito_usuario');
+    }
+
+    public function formularioDireccion(){
+        return view('/formulario_direccion');
     }
 
     public function datosBancarios(){
-        return view('datos_bancarios');
-    }
-
-    public function carritoAdmin()
-    {
-        return view('carrito_admin');
+        return view('/datos_bancarios');
     }
 
     //Práctica de formulario

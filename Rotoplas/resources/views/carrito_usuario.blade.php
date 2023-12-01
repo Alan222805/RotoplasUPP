@@ -118,7 +118,7 @@
             <p>Total: <span>$9,260.00</span></p>
         </div>
         <button>
-            <a href="{{route('carrito.datos_bancarios')}}">
+            <a href="{{route('carrito.formulario_direccion')}}">
                 <p>Comprar</p>
             </a>
         </button>

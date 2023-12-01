@@ -18,8 +18,8 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg">
+    <header class="header">
+        <nav class="navbar navbar-expand-lg" id="enlaces_nav">
             <div class="container-fluid">
 
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mi-menu"
@@ -27,21 +27,21 @@
                     <span class="navbar-toggler-icon "></span>
                 </button>
                 <div class="collapse navbar-collapse" id="mi-menu">
-                    <a class="navbar-brand" href="Principal">
+                    <a class="navbar-brand" href="{{route('user.index')}}">
                         <img src="/Rotoplas/Logo_de_Rotoplas.svg.png" alt="" width="250px">
                     </a>
                     <ul class="navbar-nav d-flex justify-content-center align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link" href="Principal">Inicio</a>
+                            <a class="nav-link" href="{{route('user.index')}}">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="capacitate">Capacitate</a>
+                            <a class="nav-link" href="{{route('user.capacitate')}}">Capacitate</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="productos">Productos</a>
+                            <a class="nav-link" href="{{route('user.productos')}}">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Conocenos">Conocenos</a>
+                            <a class="nav-link" href="{{route('user.conocenos')}}">Conocenos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="Log_in">Log_in</a>
@@ -50,7 +50,7 @@
                             <a class="nav-link" href="Sign_in">Sign_up</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link-carrito" href="carrito_usuario">
+                            <a class="nav-link-carrito" href="{{route('user.carrito_usuario')}}">
                                 <img src="/Rotoplas/carrito-de-compras.png" alt="">
                             </a>
                         </li>

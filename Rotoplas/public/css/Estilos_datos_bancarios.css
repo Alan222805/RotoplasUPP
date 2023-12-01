@@ -217,6 +217,9 @@ nav ul {
 	font-size: 14px;
 	color: #fff;
 }
+.trasera .grupo .label{
+    color: #fff;
+}
 
 /* ---------- Contenedor Boton ----------*/
 .contenedor-btn .btn-abrir-formulario {
