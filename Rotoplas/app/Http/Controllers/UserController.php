@@ -4,8 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\clienteModel;
+use App\Models\cursosModel;
 use App\Models\productosModel;
+use App\Models\productosNuevosModel;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
@@ -16,19 +19,28 @@ class UserController extends Controller
 
     public function index()
     {
-        return view('Principal');
+        $producto = productosNuevosModel::all();
+        return view('Principal', compact('producto'));
     }
 
-    public function capacitate()
+
+
+    //codigo para productos
+    public function productos() //Funcion para mostrar los productos
     {
-        return view('/capacitate');
+        $product = productosModel::paginate(6);
+        return view('/productos', compact('product'));
     }
-    public function productos()
+    //Fin de codigo para productos
+
+    //codigo para cursos
+    public function mostrarCursos() //Funcion para mostrar los cursos
     {
-        //$producto = productosModel::select('descripcion')->where('id', 1)->get();
-        $producto = productosModel::select('descripcion')->where('nombre', 'Filtro de agua')->get();
-        return view('productos', compact('producto'));
+        $cursos = cursosModel::paginate(6);
+        return view('/capacitate', compact('cursos'));
     }
+    //Fin de codigo para cursos
+
     public function carrito()
     {
         return view('carrito');
@@ -85,12 +97,5 @@ class UserController extends Controller
 
         $obj = clienteModel::paginate();
         return view('pruebaBD', compact('obj'));
-    }
-    /*Fin practica de formulario */
-
-    //Obtener registros de productos
-    public function obtenerProductos()
-    {
-        $producto = productosModel::select('descripcion')->where('id', 1)->get();
     }
 }

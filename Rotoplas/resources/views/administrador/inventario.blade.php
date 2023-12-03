@@ -47,7 +47,7 @@
                     <td>{{$registro->precio}}</td>
                     <td>{{$registro->stock}}</td>
                 </tr>
-                @endforeach
+            @endforeach
 
         </table>
         {{$obj->links('vendor.pagination.bootstrap-5')}}

@@ -21,6 +21,9 @@
                 <input name="stock" placeholder="Stock" type="number" required>
             </label>
             <label for="">
+                <input name="url" placeholder="URL Imagen" type="text" required>
+            </label>
+            <label for="">
                 <input name="idCat" placeholder="Id Categoria" type="number" required>
             </label>
 

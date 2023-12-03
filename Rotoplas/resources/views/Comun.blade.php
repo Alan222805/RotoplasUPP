@@ -35,7 +35,7 @@
                             <a class="nav-link" href="{{route('user.index')}}">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{route('user.capacitate')}}">Capacitate</a>
+                            <a class="nav-link" href="{{route('user.mostrarCursos')}}">Capacitate</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{route('user.productos')}}">Productos</a>
@@ -44,10 +44,10 @@
                             <a class="nav-link" href="{{route('user.conocenos')}}">Conocenos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Log_in">Log_in</a>
+                            <a class="nav-link" href="{{route('login')}}">Log_in</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Sign_in">Sign_up</a>
+                            <a class="nav-link" href="{{route('register')}}">Sign_up</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link-carrito" href="{{route('user.carrito_usuario')}}">

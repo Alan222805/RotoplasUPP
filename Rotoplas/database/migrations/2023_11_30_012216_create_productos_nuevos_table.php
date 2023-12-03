@@ -17,6 +17,7 @@ return new class extends Migration
             $table->integer('precio');
             $table->string('descripcion');
             $table->string('stock');
+            $table->string('urlImagen');
             $table->integer('id_categoria');
             $table->timestamps();
         });

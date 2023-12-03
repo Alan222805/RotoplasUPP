@@ -13,8 +13,10 @@ return new class extends Migration
     {
         Schema::create('reseñas_productos', function (Blueprint $table) {
             $table->id();
-            $table->integer('id_Producto');
-            $table->integer('id_Cliente');
+            $table->unsignedBigInteger('id_Producto')->change();
+            $table->foreign('id_Producto')->references('id')->on('productos');
+            $table->unsignedBigInteger('id_Cliente')->change();
+            $table->foreign('id_Cliente')->references('id')->on('clientes');
             $table->float('puntuacion');
             $table->string('comentario');
             $table->date('fecha');

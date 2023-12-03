@@ -175,6 +175,136 @@ body .container {
 
 /*Fin estilos main*/
 
+
+/*-------------------------------------------*/
+/* POPUP */
+/*-------------------------------------------*/
+
+
+.overlay_especs{
+    background-color: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay_especs.active{
+    visibility: visible;
+}
+
+.popup_especs{
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    text-align: center;
+    max-width: 50%;
+    transition: .3 ease all;
+    max-height: 40%;
+    transform: scale(0.1);
+    overflow: auto;
+    padding: 20px;
+
+}
+
+.popup_especs h3{
+    opacity: 0;
+    padding-right: 20px;
+}
+
+.popup_especs p{
+    opacity: 0;
+}
+
+.btn-abrir-popup-especs{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    transition: .4s ease all;
+}
+
+.btn-abrir-popup-especs:hover{
+    transform: scale(1.1);
+}
+
+.especs_carrito a img{
+    transition: .8 ease all;
+}
+
+.especs_carrito a img:hover{
+    transform: scale(1.1);
+}
+
+
+.popup_especs .btn-cerrar-popup-especs{
+    font-size: 20px;
+    line-height: 20px;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: #BBBBBB;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    transition: .3s ease all;
+
+}
+
+.popup_especs .btn-cerrar-popup-especs i{
+    padding-left: 30px;
+}
+
+
+.popup_especs .btn-cerrar-popup-especs:hover{
+    color: #000;
+}
+
+/*-------------------------------------------*/
+/* ANIMACIONES */
+/*-------------------------------------------*/
+
+.popup_especs.active{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.popup_especs.active h3{
+    animation: entratitulo .8s ease .5s forwards;
+}
+
+.popup_especs.active p{
+    animation: entradescripcion .8s ease .5s forwards;
+}
+
+@keyframes entradescripcion{
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+    }to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes entratitulo{
+    from{
+        opacity: 0;
+        transform: translateY(-50px);
+    }to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*-------------------------------------------*/
+
+
+
 /*Estilos para el footer*/
 .container-footer {
     display: flex;
