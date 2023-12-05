@@ -1,4 +1,4 @@
-@extends('Comun')
+@extends('/administrador/Comun_admin')
 @section('links_diseño')
 
 <style>

@@ -1,4 +1,4 @@
-@extends('Comun')
+@extends('/administrador/Comun_admin')
 @section('links_diseño')
     <link rel="stylesheet" href="/css/estilos_admin/Estilos_Capacitate_admin.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">

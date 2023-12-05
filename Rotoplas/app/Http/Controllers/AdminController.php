@@ -24,6 +24,10 @@ class AdminController extends Controller
         return view('administrador/Principal_admin', compact('product'));
     }
 
+    public function conocenosAdmin(){
+        return view('/administrador/Conocenos_admin');
+    }
+
     //productos para la pagina inicio
     public function formularioAgregarPrincipal()
     {

@@ -27,48 +27,30 @@
                     <span class="navbar-toggler-icon "></span>
                 </button>
                 <div class="collapse navbar-collapse" id="mi-menu">
-                    <a class="navbar-brand" href="{{ route('user.index') }}">
+                    <a class="navbar-brand" href="{{route('admin.index')}}">
                         <img src="/Rotoplas/Logo_de_Rotoplas.svg.png" alt="" width="250px">
                     </a>
                     <ul class="navbar-nav d-flex justify-content-center align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('user.index') }}">Inicio</a>
+                            <a class="nav-link" href="{{route('admin.index')}}">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('user.mostrarCursos') }}">Capacitate</a>
+                            <a class="nav-link" href="{{route('admin.mostrarCursosAdmin')}}">Capacitate</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('user.productos') }}">Productos</a>
+                            <a class="nav-link" href="{{route('admin.mostrarProductosAdmin')}}">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('user.conocenos') }}">Conocenos</a>
+                            <a class="nav-link" href="{{route('admin.conocenosAdmin')}}">Conocenos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">Log_in</a>
+                            <a class="nav-link" href="{{route('login')}}">Log_in</a>
                         </li>
                         <li class="nav-item">
-                            <form method="POST" action="{{ route('register') }}">
-                                @csrf
-                                {{-- <x-primary-button :href="url('auth.register')" class="nav-link" style="color: black">
-                                    {{ __('Register') }}
-                                </x-primary-button> --}}
-                                <button href="{{route('register')}}" class="nav-link" type="submit">
-                                    {{ __('Register') }}
-                                </button>
-                            </form>
+                            <a class="nav-link" href="{{route('register')}}">Sign_up</a>
                         </li>
                         <li class="nav-item">
-                            <form action="{{ route('logout') }}" method="POST">
-                                @csrf
-                                    <x-dropdown-link :href="route('logout')"
-                                        onclick="event.preventDefault();
-                                                        this.closest('form').submit();" class="nav-link" style="text-decoration: none">
-                                        {{ __('Log Out') }}
-                                    </x-dropdown-link>
-                            </form>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link-carrito" href="{{ route('user.carrito_usuario') }}">
+                            <a class="nav-link-carrito" href="{{route('admin.carritoAdmin')}}">
                                 <img src="/Rotoplas/carrito-de-compras.png" alt="">
                             </a>
                         </li>
@@ -102,19 +84,19 @@
     </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Obtén el botón del menú colapsado y la clase contenedor
-            var btnMenu = document.querySelector('.navbar-toggler');
-            var contenedor = document.querySelector('.main');
+		document.addEventListener('DOMContentLoaded', function () {
+			// Obtén el botón del menú colapsado y la clase contenedor
+			var btnMenu = document.querySelector('.navbar-toggler');
+			var contenedor = document.querySelector('.main');
 
-            // Agrega un evento click al botón del menú
-            btnMenu.addEventListener('click', function() {
-                // Hacer algo con la clase contenedor cuando se hace clic en el botón del menú
-                // Por ejemplo, agregar o quitar una clase para cambiar la apariencia
-                contenedor.classList.toggle('desenfocado');
-            });
-        });
-    </script>
+			// Agrega un evento click al botón del menú
+			btnMenu.addEventListener('click', function () {
+				// Hacer algo con la clase contenedor cuando se hace clic en el botón del menú
+				// Por ejemplo, agregar o quitar una clase para cambiar la apariencia
+				contenedor.classList.toggle('desenfocado');
+			});
+		});
+	</script>
     <script src="/bootstrap-5.3.2-dist/js\bootstrap.bundle.min.js"></script>
     @yield('archivosJS')
 </body>

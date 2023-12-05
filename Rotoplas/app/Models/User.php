@@ -24,6 +24,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'rol',
     ];
 
     /**
@@ -45,4 +46,12 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+
+    public function isAdmin()
+    {
+        // Asume que 'role' es una columna en tu tabla de usuarios que indica el rol del usuario
+        return $this->rol == 'admin';
+    }
 }
+

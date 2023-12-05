@@ -30,7 +30,7 @@ header {
 }
 
 /*Agregandoles estilo al navbar*/
-.navbar li .nav-link {
+#enlaces_nav li .nav-link {
     background-color: #F27329;
     border-radius: 32px;
     margin-right: 10px;
@@ -41,19 +41,30 @@ header {
 .nav-link-carrito {
     padding-right: 20px;
 }
-.navbar li a:hover , .nav-link-carrito img:hover{
+
+#enlaces_nav li a:hover,
+.nav-link-carrito img:hover {
     transform: scale(1.1);
     color: aliceblue;
     cursor: pointer;
 }
 
-nav {
-    background: linear-gradient(180deg, rgba(89.48, 158.12, 173.19, 0.60) 0%, rgba(250.75, 221.08, 176.57, 0) 100%);
+.header {
+    min-height: 15vh;
 }
 
-nav ul {
+#enlaces_nav,
+.footer {
+    height: 15vh;
+}
+
+#enlaces_nav {
+    background: linear-gradient(180deg, rgba(89.48, 158.12, 173.19, 0.60) 0%, rgba(250.75, 221.08, 176.57, 0) 100%);
+
+}
+
+#enlaces_nav ul {
     text-align: center;
-    /*centrando los elementos de la lista desordenada*/
 }
 
 .navbar-collapse {
@@ -64,7 +75,6 @@ nav ul {
     margin-bottom: 5px;
     z-index: 1;
 }
-
 /*Fin estilos navbar*/
 
 /*Estilos para el main*/

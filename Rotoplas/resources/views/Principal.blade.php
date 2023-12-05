@@ -1,5 +1,5 @@
 
-@extends('Comun')
+    @extends('Comun')
 
 @section('links_diseño')
     <link rel="stylesheet" href="/css/Estilos_Principal.css">

@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Illuminate\Support\Facades\Auth;
 
+
 class CheckRole
 {
     /**
@@ -14,13 +15,12 @@ class CheckRole
      *
      * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
      */
-    public function handle(Request $request, Closure $next): Response
+    public function handle(Request $request, Closure $next)
     {
-        if(Auth::check() && Auth::user()->rol == 'admin'){
+        if (auth()->check() && auth()->user()->rol === 'admin') {
             return $next($request);
         }
-        else{
-            return redirect('/Principal');
-        }
+
+        abort(403, 'Acceso no autorizado.');
     }
 }
