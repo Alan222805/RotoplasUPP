@@ -20,7 +20,7 @@ class AdminController extends Controller
     }
     public function index()
     {
-        $product = productosNuevosModel::all();
+        $product = productosNuevosModel::paginate(5);
         return view('administrador/Principal_admin', compact('product'));
     }
 

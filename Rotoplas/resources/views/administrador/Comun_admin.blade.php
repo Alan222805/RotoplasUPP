@@ -50,6 +50,16 @@
                             <a class="nav-link" href="{{route('register')}}">Sign_up</a>
                         </li>
                         <li class="nav-item">
+                            <form action="{{ route('logout') }}" method="POST">
+                                @csrf
+                                    <x-dropdown-link :href="route('logout')"
+                                        onclick="event.preventDefault();
+                                                        this.closest('form').submit();" class="nav-link" style="text-decoration: none">
+                                        {{ __('Log Out') }}
+                                    </x-dropdown-link>
+                            </form>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link-carrito" href="{{route('admin.carritoAdmin')}}">
                                 <img src="/Rotoplas/carrito-de-compras.png" alt="">
                             </a>

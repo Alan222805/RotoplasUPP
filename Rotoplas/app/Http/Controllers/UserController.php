@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\DB;
 class UserController extends Controller
 {
 
-    
+
 
     public function __invoke()
     {
@@ -25,7 +25,7 @@ class UserController extends Controller
     public function index()
     {
 
-        $producto = productosNuevosModel::all();
+        $producto = productosNuevosModel::paginate(5);
         return view('Principal', compact('producto'));
     }
 

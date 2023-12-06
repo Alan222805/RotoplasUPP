@@ -11,15 +11,5 @@
                 <h1>Inventario</h1>
             </a>
         </div>
-        <div class="herramienta">
-            <a href="#">
-                <h1>Historial de pedidos</h1>
-            </a>
-        </div>
-        <div class="herramienta">
-            <a href="#">
-                <h1>Seguimiento de envios</h1>
-            </a>
-        </div>
     </div>
 @endsection

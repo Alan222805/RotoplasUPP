@@ -7,23 +7,18 @@
 @section('ContenidoPrincipal')
     <article class="aside">
         <form action="{{ url('/productos') }}" method="get">
-            <label>Categoría:</label>
-            {{-- <select name="category">
-            <option value="electronic">Electrónica</option>
-            <option value="clothing">Ropa</option>
-            <!-- Agrega más opciones según tus categorías -->
-        </select> --}}
+            <label style="col ">Filtrar por:</label>
 
             <label>Precio Mínimo:</label>
-            <input type="text" name="price_min">
+            <input type="text" name="price_min" style="width: 100px">
 
             <label>Precio Máximo:</label>
-            <input type="text" name="price_max">
+            <input type="text" name="price_max" style="width: 100px">
 
             <!-- Otros filtros aquí... -->
 
-            <button type="submit">Aplicar filtros</button>
-            <button type="submit">Eliminar filtros</button>
+            <button type="submit"  style="border-radius: 10px; background: #2364D2; color:white; font-weight:bold; padding:2px 5px; outline:none; border:none">Aplicar filtros</button>
+            <button type="submit" style="border-radius: 10px; background: #2364D2; color:white; font-weight:bold; padding:2px 5px; outline:none; border:none">Eliminar filtros</button>
         </form>
     </article>
 

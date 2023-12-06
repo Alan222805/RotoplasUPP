@@ -28,12 +28,11 @@
                                 </svg>
                             </button>
                         </div>
-                        <h2 class="precio-por-producto"> {{ $product->precio * $product->cantidadProducto }} </h2>
+                        <h2 class="precio-por-producto"> ${{ $product->precio * $product->cantidadProducto }}.00 </h2>
                     </div>
                 </div>
             </div>
         @endforeach
-        {{ $productos->links('pagination::bootstrap-5') }}
 
 
     </section>
@@ -44,12 +43,13 @@
             <p>Total: <span>$9,260.00</span></p>
         </div>
         <button>
-            <a href="{{ route('carrito.formulario_direccion') }}">
+            <a href="{{ route('carrito.formulario_direccion') }}" style="text-decoration: none">
                 <p>Comprar</p>
             </a>
         </button>
     </aside>
-@endsection
+    {{ $productos->links('pagination::bootstrap-5') }}
+    @endsection
 
 @section('archivosJS')
 

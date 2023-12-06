@@ -158,7 +158,8 @@ header {
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
     border-radius: 10px;
     text-align: center;
-    max-width: 50%;
+    min-width: 65%;
+    max-width: 70%;
     transition: .3 ease all;
     max-height: 40%;
     transform: scale(0.1);
@@ -311,9 +312,11 @@ header {
 
 /*Responsive movil*/
 
-@media (max-width: 390px),
+@media screen and (min-width: 390px) and
 (max-width:430px) {
-
+    main article, main article form{
+        display: none !important;
+    }
     .main {
         display: grid;
         grid-template-columns: 1fr;
@@ -356,13 +359,13 @@ header {
         text-align: center;
     }
 
-    .container{
+    /* .container{
         display: flex;
         flex-direction: column;
         padding: 20px;
         max-width: 100%;
         position: relative;
-    }
+    } */
 
     .navbar-brand img {
         display: none;
@@ -388,6 +391,12 @@ header {
         max-width: 80%;
     }
 
+
+    /*productos*/
+    main .container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 
     /*Diseño responsive footer*/
     .container-footer {
@@ -442,4 +451,64 @@ header {
     html{
         position: relative;
     }
+}
+
+
+@media (max-width: 820px){
+
+    .desenfocado {
+        filter: blur(10px);
+        /* Agrega un desenfoque al contenedor cuando la clase está presente */
+        /* Otros estilos que desees aplicar cuando el menú está colapsado */
+    }
+
+    .navbar-toggler{
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        width: 70px;
+        height: 70px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-toggler-icon{
+        width: 50px;
+        height: 50px;
+    }
+
+    .navbar-brand img {
+        display: none !important;
+    }
+
+}
+
+@media screen and (min-width: 821px) and (max-width: 1024px){
+    #enlaces_nav li .nav-link {
+        margin-right: 5px;
+        width: 95px;
+        font-size: 14px;
+        padding: 0;
+    }
+
+    .x-dropdown-link{
+        padding: 0;
+
+    }
+}
+
+
+@media (max-width: 1024px){
+    .collapse .navbar-brand img{
+        width: 170px;
+    }
+
+    .desenfocado {
+		filter: blur(10px);
+		/* Agrega un desenfoque al contenedor cuando la clase está presente */
+		/* Otros estilos que desees aplicar cuando el menú está colapsado */
+	}
+
 }

@@ -71,7 +71,7 @@
                             <a class="nav-link-carrito" href="{{ route('user.carrito_usuario') }}">
                                 <img src="/Rotoplas/carrito-de-compras.png" alt="">
                             </a>
-                        </li>
+                        </li> 
                     </ul>
                 </div>
             </div>

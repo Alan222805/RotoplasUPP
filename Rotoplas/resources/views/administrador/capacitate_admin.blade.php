@@ -52,7 +52,7 @@
                         <button class="btn-abrir-popup-especs" id="btn-abrir-popup-especs">
                             <img src="/Rotoplas/especificaciones_producto.png" alt="">
                         </button>
-                        <a href="#">
+                        <a href="carrito_admin">
                             <img src="/Rotoplas/carrito.png" alt="">
                         </a>
                     </span>

@@ -363,9 +363,9 @@ header {
         text-align: center;
     }
 
-    .container{
-        display: flex;
-        flex-direction: column;
+    main .container{
+        display: grid;
+        grid-template-columns: 1fr;
         padding: 20px;
         max-width: 100%;
         position: relative;
@@ -520,5 +520,43 @@ header {
 
     .navbar-brand img {
         display: none !important;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 821px) and (max-width: 1024px){
+    #enlaces_nav li .nav-link {
+        margin-right: 5px;
+        width: 95px;
+        font-size: 14px;
+        padding: 0;
+    }
+
+    .x-dropdown-link{
+        padding: 0;
+
+    }
+}
+
+
+@media (max-width:768px){
+    .container .curso .link_curso img{
+        width: 70%;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 100%;
+    }
+
+    .container .curso{
+        padding: 15px;
     }
 }
